@@ -13,7 +13,7 @@ namespace Console_ToDo.DataAccess
         private static DBConnection instance;
         private ISessionFactory sessionFactory;
 
-        private static readonly string conString = "Data Source=OATHKEEPER;Initial Catalog=University;Integrated Security=True;Encrypt=False;TrustServerCertificate=True";
+        private static readonly string conString = "Data Source=OATHKEEPER;Initial Catalog=ToDoDB;Integrated Security=True;TrustServerCertificate=True";
 
         private DBConnection()
         {
@@ -48,7 +48,7 @@ namespace Console_ToDo.DataAccess
         }
 
 
-        public void CreateTask(Task task)
+        public void CreateTask(Tasks task)
         {
             using (var session = this.sessionFactory.OpenSession())
             {
@@ -63,7 +63,7 @@ namespace Console_ToDo.DataAccess
         }
 
 
-        public void AddUser(User user)
+        public void AddUser(Users user)
         {
             using(var session = this.sessionFactory.OpenSession()){
 

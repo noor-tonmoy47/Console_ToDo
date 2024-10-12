@@ -3,11 +3,11 @@ using FluentNHibernate.Mapping;
 
 namespace Console_ToDo.DataAccess.Mapping
 {
-    internal class TaskMap : ClassMap<Task>
+    internal class TaskMap : ClassMap<Tasks>
     {
         public TaskMap() {
 
-            Table("tasks");
+            Table("Tasks");
             Id(x => x.Id).GeneratedBy.Identity();
             Map(x => x.Content);
             Map(x => x.IsCompleted);

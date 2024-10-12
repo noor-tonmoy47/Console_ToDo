@@ -69,8 +69,8 @@
   <ItemGroup>
     <Compile Include="BusinessLogic\Controller.cs" />
     <Compile Include="DataAccess\DBConnection.cs" />
-    <Compile Include="DataAccess\Entity\Task.cs" />
-    <Compile Include="DataAccess\Entity\User.cs" />
+    <Compile Include="DataAccess\Entity\Tasks.cs" />
+    <Compile Include="DataAccess\Entity\Users.cs" />
     <Compile Include="DataAccess\Mapping\TaskMap.cs" />
     <Compile Include="DataAccess\Mapping\UserMap.cs" />
     <Compile Include="Presentation\UserInteraction.cs" />

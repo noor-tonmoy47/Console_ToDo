@@ -30,9 +30,9 @@ namespace Console_ToDo.BusinessLogic
         public void RegisterUser(string userName)
         {
 
-            var user = new User
+            var user = new Users
             {
-                Name = userName
+                UserName = userName
             };
 
             db.AddUser(user);
